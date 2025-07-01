@@ -36,30 +36,43 @@
 
 <body class="flex flex-col min-h-screen">
 
-    <header
-        style="width: 100%; position: fixed; top: 0; left: 0; z-index: 1000; background: #012f42; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06); padding: 10px 20px;">
-        <div style="display: flex; align-items: center; width: 100%;">
+    <header class="w-full fixed top-0 left-0 z-50 bg-[#012f42] shadow-md px-4 py-3">
+        <div class="flex items-center justify-between max-w-7xl mx-auto">
 
-            <div class="logo" style="display: flex; align-items: center; gap: 10px;">
-                <a href="./" aria-label="Αρχική">
-                    <div class="logo-circle">
-                        <img src="./img/dbpedia-logo.png" alt="Λογότυπο DBpedia" class="logo-img" style="height: 40px;">
+            <!-- Logo -->
+            <div class="flex items-center gap-2">
+                <a href="./" aria-label="Αρχική" class="flex items-center gap-2">
+                    <div class="bg-white rounded-full p-1">
+                        <img src="./img/dbpedia-logo.png" alt="Λογότυπο DBpedia" class="h-8 w-8 object-contain" />
                     </div>
+                    <span class="text-white font-semibold text-lg">Ελληνική DBpedia</span>
                 </a>
-                <span style="color: white; font-weight: bold;">Ελληνική DBpedia</span>
             </div>
 
-            <div style="display: flex; align-items: center; gap: 30px; margin-left: auto;">
-                <nav>
-                    <ul style="display: flex; gap: 20px; list-style: none; margin: 0; padding: 0;">
-                        <li><a href="./" style="color: white; text-decoration: none;">Αρχική</a></li>
-                        <li><a href="./people" style="color: white; text-decoration: none;">Η Ομάδα</a></li>
-                        <li><a href="#" style="color: white; text-decoration: none;">Παραδείγματα</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <!-- Hamburger (mobile) -->
+            <button id="mobileMenuBtn" class="text-white md:hidden focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+
+            <!-- Navigation links -->
+            <nav class="hidden md:flex gap-6">
+                <a href="./" class="text-white hover:underline">Αρχική</a>
+                <a href="./people" class="text-white hover:underline">Η Ομάδα</a>
+                <a href="./examples" class="text-white hover:underline">Παραδείγματα</a>
+            </nav>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobileMenu" class="md:hidden hidden px-4 pt-4 pb-2 space-y-2 bg-[#012f42]">
+            <a href="./" class="block text-white">Αρχική</a>
+            <a href="./people" class="block text-white">Η Ομάδα</a>
+            <a href="./examples" class="block text-white">Παραδείγματα</a>
         </div>
     </header>
+
 
     <main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-10 max-w-5xl">
 
@@ -68,8 +81,8 @@
 
             <p class="mb-6 max-w-3xl text-gray-700 text-lg leading-relaxed">
                 Οι παρακάτω ερωτήσεις μπορούν να εκτελεστούν στο
-                <a href="https://web.archive.org/web/20201205120544/http://el.dbpedia.org/sparql" target="_blank"
-                    rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">
+                <a href="https://el.dbpedia.org/sparql" target="_blank" rel="noopener noreferrer"
+                    class="text-blue-600 hover:underline font-semibold">
                     SPARQL Endpoint
                 </a>
                 της εφαρμογής. Τα δεδομένα υπακούν στην οντολογία της DBpedia και ο γράφος στον οποίο ανήκουν τα
@@ -77,9 +90,19 @@
                 είναι:
             </p>
 
-            <p class="mb-10 font-mono bg-gray-100 p-4 rounded border border-gray-300 max-w-xs select-all shadow-sm">
-                http://el.dbpedia.org
+            <p
+                class="mb-10 font-mono bg-gray-100 p-4 rounded border border-gray-300 max-w-xs select-all shadow-sm break-words text-sm">
+                https://mappings.dbpedia.org/server/ontology/classes/
             </p>
+
+
+            <p class="mb-6 max-w-3xl text-gray-700 text-lg leading-relaxed">
+                Δείτε ένα παράδειγμα γράφου <a href="https://el.dbpedia.org:2004/page/Ελλάδα" target="_blank"
+                    rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">
+                    εδώ
+                </a>
+            </p>
+
 
             <div class="space-y-10">
 
@@ -230,6 +253,13 @@ ORDER BY ASC(?country )</code></pre>
                     }, 2000);
                 });
             });
+        });
+
+        const menuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
         });
     </script>
 
