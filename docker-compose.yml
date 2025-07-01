@@ -32,7 +32,7 @@ services:
         condition: service_healthy
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.dbpedia.rule=Host(`dbpedia.okfn.gr`)" # Change to your domain
+      - "traefik.http.routers.dbpedia.rule=Host(`el.dbpedia.org`)" # Change to your domain
       - "traefik.http.routers.dbpedia.entrypoints=websecure"
       - "traefik.http.routers.dbpedia.tls=true"
       - "traefik.http.services.dbpedia.loadbalancer.server.port=80"
