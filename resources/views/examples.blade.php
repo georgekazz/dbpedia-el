@@ -79,7 +79,7 @@
         <section>
             <h2 class="text-3xl font-semibold mb-6 text-gray-900">SPARQL</h2>
 
-            <p class="mb-6 max-w-3xl text-gray-700 text-lg leading-relaxed">
+            <p class="mb-6 max-w-3xl text-gray-700 text-lg leading-relaxed text-justify">
                 Οι παρακάτω ερωτήσεις μπορούν να εκτελεστούν στο
                 <a href="https://el.dbpedia.org/sparql" target="_blank" rel="noopener noreferrer"
                     class="text-blue-600 hover:underline font-semibold">
@@ -97,7 +97,7 @@
 
 
             <p class="mb-6 max-w-3xl text-gray-700 text-lg leading-relaxed">
-                Δείτε ένα παράδειγμα γράφου <a href="https://el.dbpedia.org:2004/page/Ελλάδα" target="_blank"
+                Δείτε ένα παράδειγμα γράφου <a href="https://el.dbpedia.org/page/Ελλάδα" target="_blank"
                     rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">
                     εδώ
                 </a>

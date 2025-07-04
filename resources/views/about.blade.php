@@ -68,7 +68,7 @@
             βοηθήσουν να ξεκινήσετε:
         </p>
 
-        <ul class="list-disc list-inside mb-6 space-y-2">
+        <ul class="list-disc list-inside mb-6 space-y-2 text-justify">
             <li>
                 <strong>DBpedia – Μια μεγάλης κλίμακας, πολύγλωσση βάση γνώσης που εξάγεται από τη
                     Wikipedia.</strong><br />
@@ -83,7 +83,7 @@
             </li>
         </ul>
 
-        <h3 class="text-2xl font-semibold mb-3">Η Βάση Γνώσης της DBpedia</h3>
+        <h3 class="text-2xl font-semibold mb-3 text-justify">Η Βάση Γνώσης της DBpedia</h3>
         <p class="mb-4 text-justify">
             Οι βάσεις γνώσης παίζουν σημαντικό ρόλο στην ενίσχυση της ευφυΐας των μηχανών αναζήτησης και της ενοποίησης
             της πληροφορίας. Η DBpedia αξιοποιεί την τεράστια ποσότητα πληροφορίας της Wikipedia για να εξάγει δομημένα
