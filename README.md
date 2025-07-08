@@ -4,25 +4,14 @@
 
 Η ελληνική DBpedia αποτελεί το πρώτο βήμα προς τη Διεθνοποίηση των Συνδεδεμένων Δεδομένων (Linked Data) και την πρώτη επιτυχημένη προσπάθεια παροχής Συνδεδεμένων Δεδομένων με απο-ανακτήσιμα IRI, τα οποία μπορούν να χρησιμεύσουν ως οδηγός για τη δημοσίευση LOD (Linked Open Data) σε μη-λατινικές γλώσσες.
 
-## Learning Laravel
+## Screenshots
+![image](https://github.com/user-attachments/assets/40f49a36-cd20-4751-b7fc-5aa5bac550c2)
+![image](https://github.com/user-attachments/assets/f4e4f848-eb5c-4021-9d5a-7b9ff0178796)
+![image](https://github.com/user-attachments/assets/99926f78-fea8-4a67-82ed-0c2876f9dde2)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
 ## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+This website was developed by Giorgos Christoforos Kazlaris through the Open Knowledge Foundation.
 
 ## License
 
